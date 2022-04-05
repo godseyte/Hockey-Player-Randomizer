@@ -4,7 +4,7 @@ Written by Tucker Godsey
 Generates a Hockey Player using randomized variables.
 */
 
-// Variables
+// Variables for Player
 let firstName = "";
 let lastName = "";
 let jerseyNumber = 0;
@@ -15,6 +15,10 @@ let city = "";
 let teamName = "";
 let position = "";
 let handed = "";
+
+// Arrays
+let firstNames = ['Partrik', 'Jakub', 'Boone', 'Oliver', 'Zack'];
+let lastNames = ['Laine', 'Voracek', 'Jenner', 'Bjorkstrand', 'Werenski'];
 
 // Get Documents to print stats to
 const docFirstName = document.getElementById("firstName");
@@ -28,14 +32,19 @@ const docTeamName = document.getElementById("teamName");
 const docPosition = document.getElementById("position");
 const docHanded = document.getElementById("handed");
 
+// TEMP: Generate list of names
+GenerateNames();
+
 // TEMP: Generate a Player
 GeneratePlayer();
 
 // Generate a Hockey Player
 function GeneratePlayer() 
 {
-    firstName = "Patrik";
-    lastName = "Laine";
+    // Get First and Last names
+    ReturnName();
+
+    // TEMP: Some filler stats
     jerseyNumber = "29";
     height = 77 + "inch";
     weight = 216 + "lbs";
@@ -63,4 +72,17 @@ function ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, ci
     docPosition.innerHTML = position;
     docHanded.innerHTML = handed;
     
+}
+
+// Return a First and Last name from a list
+function ReturnName()
+{
+    // Get random name from arrays. First and last.
+    firstName = firstNames[Math.round(Math.random() * (firstNames.length - 1))];
+    lastName = lastNames[Math.round(Math.random() * (lastNames.length - 1))];
+}
+
+function GenerateNames() 
+{
+    // TODO: Automatically fill in First and Last names somehow instead of our dumb declaration up top
 }
