@@ -166,11 +166,11 @@ function ReturnPhysicalStats()
     // Handedness
     if(Math.random() < .5)
     {
-        handed = "Right";
+        handed = "Right Handed";
     }
     else
     {
-        handed = "Left";
+        handed = "Left Handed";
     }
 
     // Sex
