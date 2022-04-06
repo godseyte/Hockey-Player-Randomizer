@@ -41,14 +41,12 @@ GeneratePlayer();
 // Generate a Hockey Player
 function GeneratePlayer() 
 {
-    // Get First and Last names
+    // Run individual methods
     ReturnName();
+    ReturnJerseyNumber();
+    ReturnPhysicalStats();
 
     // TEMP: Some filler stats
-    jerseyNumber = "29";
-    height = 77 + "inch";
-    weight = 216 + "lbs";
-    sex = "yes";
     city = "Columbus";
     teamName = "Blue Jackets";
     position = "Left Wing";
@@ -72,6 +70,83 @@ function ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, ci
     docPosition.innerHTML = position;
     docHanded.innerHTML = handed;
     
+}
+
+// Get a random jersey number. 1-98. 99 is sacred
+function ReturnJerseyNumber() 
+{
+    jerseyNumber = Math.floor(Math.random() * 97) + 1 // Add 1 to prevent 0s.
+
+    // lmao
+    if(jerseyNumber === 69)
+    {
+        jerseyNumber = jerseyNumber + " lol";
+    }
+}
+
+
+// Height, Weight, and Sex
+function ReturnPhysicalStats()
+{
+    // Weighted height.
+    const heightRanges = [48, 58, 68, 78, 88];
+    const heightWeights = [1, 3, 5, 3, 1]
+    let heightWeight = 0;
+    let heightInch = 0; // height in inches. idk why I have to declare it here.
+
+    // Generate total weight
+    heightWeights.forEach(Element => {
+        heightWeight = heightWeight + Element;
+    });
+
+    // Random number draw
+    let heightRand = Math.floor(Math.random() * heightWeight);
+
+    // Loop through the Ranges and compare against our Weight
+    for(let i = 0; i < heightRanges.length; i = i + 1)
+    {
+        // Compare number to the current weight. If number is less than weight, randomize our height. Otherwise subtract the weight and try the next item
+        if(heightRand <= heightWeights[i])
+        {
+            // Randomize the height between our range. The number in the array is the bottom of the array, and can go up by 9.
+            heightInch = heightRanges[i] + Math.floor(Math.random() * 9);
+            height = (Math.floor(heightInch / 12)) + "'" + (Math.floor(heightInch % 12)) + '"';
+            break;   
+        }
+        else
+        {
+            heightRand -= heightWeights[i];
+        }
+    }
+
+    // According to this dumb sport-net page, the average height is 6'1" (73inch) and 200lbs. Ratio of 200/73, or 2.74. Basically, if we take our height in inches, we can just multiply it by that to get our weight
+    // https://sport-net.org/what-is-the-average-height-and-weight-of-an-nhl-player/
+    // I'll +- 25 pounds just for fun too. Why not. This is really dumb anyway.
+    let tempWeight = Math.floor(heightInch * 2.74);
+
+    if(Math.random() < .5)
+    {
+        weight = tempWeight + Math.floor(Math.random() * 25) + "lbs";;
+    }
+    else
+    {
+        weight = tempWeight - Math.floor(Math.random() * 25) + "lbs";;
+    }
+
+    // Sex
+    let numbSex = Math.floor(Math.random() * 1000); // The Number for Sex. ;)
+    if(numbSex < 499)
+    {
+        sex = "Female";
+    }
+    else if(numbSex < 999)
+    {
+        sex = "Male";
+    }
+    else // .1% chance lets go
+    {
+        sex = "yes"
+    }
 }
 
 // Return a First and Last name from a list
