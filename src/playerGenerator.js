@@ -16,6 +16,7 @@ let teamName = "";
 let position = "";
 let handed = "";
 let captaincy = "";
+let age = 0;
 
 // Arrays
 let firstNames = [];
@@ -33,6 +34,7 @@ const docTeamName = document.getElementById("teamName");
 const docPosition = document.getElementById("position");
 const docHanded = document.getElementById("handed");
 const docCaptaincy = document.getElementById("captaincy");
+const docAge = document.getElementById("age");
 
 // TEMP: Generate list of names
 GenerateNames();
@@ -50,11 +52,11 @@ function GeneratePlayer()
     ReturnTeam();
 
     // TEMP: Return Player
-    ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, city, teamName, position, handed);
+    ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, city, teamName, position, handed, age);
 }
 
 // Return a Player
-function ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, city, teamName, position, handed)
+function ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, city, teamName, position, handed, age)
 {
     docFirstName.innerHTML = firstName;
     docLastName.innerHTML = lastName;
@@ -67,6 +69,7 @@ function ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, ci
     docPosition.innerHTML = position;
     docHanded.innerHTML = handed;
     docCaptaincy.innerHTML = captaincy;
+    docAge.innerHTML = age;
 }
 
 // Return a random jersey number. 1-98. 99 is sacred. Also return player position and captaincy
@@ -187,6 +190,9 @@ function ReturnPhysicalStats()
     {
         sex = "yes"
     }
+
+    // Age
+    age = Math.floor(Math.random() * 23) + 18;
 }
 
 // Return City and Team Name
