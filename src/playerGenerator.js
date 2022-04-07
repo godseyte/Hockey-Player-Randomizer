@@ -18,8 +18,8 @@ let handed = "";
 let captaincy = "";
 
 // Arrays
-let firstNames = ['Partrik', 'Jakub', 'Boone', 'Oliver', 'Zack'];
-let lastNames = ['Laine', 'Voracek', 'Jenner', 'Bjorkstrand', 'Werenski'];
+let firstNames = [];
+let lastNames = [];
 
 // Get Documents to print stats to
 const docFirstName = document.getElementById("firstName");
@@ -194,11 +194,12 @@ function ReturnTeam()
 {
     const teamNames = ['Blue Jackets', 'Red Jackets', 'Hurricanes', 'Devils', 'Islanders', 'Mainlanders', 'Rangers', 'Nearers', 'Flyers', 'Penguins', 'Flightless Birds', 'Capitals', 'Bruins', 'Sabers', 'Red Wings', 'Panthers', 'Cougars', 'Canadiens', 'Americans', 'Senators', 'Lightning', 
     'Maple Leafs', 'Coyotes', 'Blackhawks', 'Avalanche', 'Stars', 'Wild', 'Predators', 'Prey', 'Blues', 'Sads', 'Jets', 'Planes', 'Spitfire', 'Ducks', 'Flames', 'Waters', 'Oilers', 'Kings', 'Queens', 'Sharks', 'Fish', 'Kraken', 'Flying Spaghetti Monster', 'Golden Knights', 'Black Knights',
-    'White Knights', 'Stripes', 'Tendies', 'Cyclones', 'Monsters', 'Ice Hogs', 'Gamers', 'Cola Drinkers', 'Idlers', 'Influencers', 'Redditors', 'Enthusiasts', 'Beer Leaguers'];
+    'White Knights', 'Stripes', 'Tendies', 'Cyclones', 'Monsters', 'Ice Hogs', 'Gamers', 'Cola Drinkers', 'Idlers', 'Influencers', 'Redditors', 'Enthusiasts', 'Beer Leaguers', 'Officers',
+    ];
 
     const cities = ['Columbus', 'Cincinnati', 'Toronto', 'Boston', 'Tampa Bay', 'Miami', 'Seattle', 'Las Vegas', 'Los Angeles', 'Detroit', 'Kalamazoo', 'Cleveland', 'San Francisco', 'Calgary', 'Ontario', 'Quebec', 'Dallas', 'Houston', 'London', 'Mexico City', 'Dayton', 'Daytona', 
     'Williamsburg', 'Milford', 'Cedar Point', 'Tokyo', 'Paris', 'Shanghai', 'Kyiv', 'New York', 'Chicago', 'Washington', 'Philadelphia', 'Pheonix', 'Arizona', 'Florida', 'Denver', 'Colorado', 'St. Paul', 'Minnesota', 'Pittsburgh', 'San Jose', 'Nashville', 'Buffalo', 
-    'Montreal', 'Raleigh', 'Carolina', 'Vancouver', 'Ottawa', 'Edmonton', 'Winnipeg'];
+    'Montreal', 'Raleigh', 'Carolina', 'Vancouver', 'Ottawa', 'Edmonton', 'Winnipeg', 'Reno'];
 
     teamName = teamNames[Math.floor(Math.random() * teamNames.length)];
     city = cities[Math.floor(Math.random() * cities.length)];
@@ -215,4 +216,10 @@ function ReturnName()
 function GenerateNames() 
 {
     // TODO: Create large arrays of First and Last names.
+    firstNames = ['Partrik', 'Jakub', 'Boone', 'Oliver', 'Zack', 'Emil', 'Yegor', 'Justin', 'Brendan', 'Sean', 'Carson', 'Gustav', 'Eric', 'Jack', 'Cole', 'Alexandre', 
+    'Gavin', 'Jake', 'Adam', 'Gabriel', 'Vladislav', 'Dean', 'Andrew', 'J-F', 'Joonas', 'Elivs', 'Daniil', 'Brad', 'Cam', 'Kris'];
+    
+    lastNames = ['Laine', 'Voracek', 'Jenner', 'Bjorkstrand', 'Werenski', 'Bemstrom', 'Chinakov', 'Danforth', 'Gaunce', 'Kuraly', 'Meyer', 'Nyquist', 'Robinson', 'Roslovic',
+    'Sillinger', 'Texier', 'Bayreuther', 'Bean', 'Boqvist', 'Carlsson', 'Christainsen', 'Gavrikov', 'Kukan', 'Peeke', 'Berube', 'Korpisalo', 'Merzlinkins', 'Tarasov', 'Marchand',
+    'Atkinson'];
 }
