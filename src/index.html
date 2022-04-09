@@ -8,9 +8,9 @@
   </head>
   <body>
 
-    <div id="MainBody" style="display:inline-flex">
+    <div id="MainBody" style="display:inline-flex; width: 100%;" >
 
-      <div id="LeftBody">
+      <div id="LeftBody" style="float: left">
 
         <div id="Title" style="justify-content: left;">
           <h1>Hockey Player Randomizer</h1>
@@ -35,12 +35,27 @@
 
       </div>
 
-      <div id="RightBody">
+      <div id="RightBody" style="float: right; position: relative;">
 
-        <div id="Jersey">
-          <h3 id="jerseyNumber"></h3>
-          <h3 id="city"></h3>
-          <h3 id="teamName"></h3>
+        <div id="Jersey Comtainer">
+
+          <div style="margin: auto">
+
+            <h3 id="city" style="display: inline-block;"></h3>
+            <h3 id="teamName" style="display: inline-block;"></h3>
+
+          </div>
+          
+
+          <img src="Images/JerseyBlank.png" style="width: 100%;">
+
+          <div style="position: absolute">
+
+            <h3 id="jerseyNumber" style="top: 50%; left: 50%"></h3>
+            
+          </div>
+          
+
         </div>
 
       </div>

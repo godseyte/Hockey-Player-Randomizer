@@ -13,7 +13,9 @@ const createWindow = () => {
     width: 800,
     height: 600,
     autoHideMenuBar: true,
-    icon: __dirname + '/Logo.ico'
+    icon: __dirname + '/Logo.ico',
+    minWidth: 800,
+    minHeight: 600,
   });
 
   // and load the index.html of the app.
