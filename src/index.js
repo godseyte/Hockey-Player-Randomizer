@@ -13,7 +13,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     autoHideMenuBar: true,
-    icon: __dirname + '/Logo.ico',
+    icon: __dirname + '/Images/Logo.ico',
     minWidth: 800,
     minHeight: 600,
   });
