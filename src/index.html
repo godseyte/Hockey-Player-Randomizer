@@ -8,16 +8,17 @@
   </head>
   <body>
 
-    <div id="MainBody" style="display:inline-flex; width: 100%;" >
+    <div id="LogoBar">
 
-      <div id="LeftBody" style="float: left">
+      <h1>Hockey Player Randomizer</h1>
+      <p>by Tucker Godsey</p>
 
-        <div id="Title" style="justify-content: left;">
-          <h1>Hockey Player Randomizer</h1>
-          <p>by Tucker Godsey</p>
-        </div>
-        
-      
+     </div>
+
+    <div id="MainBody" style="display: inline-flex; width: 100%;" >
+
+      <div id="LeftBody">
+
         <div id="PlayerName">
           <h3 id="firstName"></h3>
           <h3 id="lastName"></h3>
@@ -35,23 +36,21 @@
 
       </div>
 
-      <div id="RightBody" style="float: right; position: relative;">
+      <div id="RightBody">
 
         <div id="Jersey Comtainer">
 
-          <div style="margin: auto">
+          <div style="margin: auto; justify-content: center; align-items: center;">
 
             <h3 id="city" style="display: inline-block;"></h3>
             <h3 id="teamName" style="display: inline-block;"></h3>
 
           </div>
-          
 
-          <img src="Images/JerseyBlank.png" style="width: 100%;">
+          <div>
 
-          <div style="position: absolute">
-
-            <h3 id="jerseyNumber" style="top: 50%; left: 50%"></h3>
+            <img src="Images/JerseyBlank.png" style="width: 100%; height: auto; display: block;">
+            <h3 id="jerseyNumber"></h3>
             
           </div>
           
