@@ -23,9 +23,9 @@ div#LeftBody, div#RightBody {
 }
 
 div#LeftBody {
-  background: blue;
+  background: lightblue;
 }
 
 div#RightBody {
-  background: red;
+  background: lightcoral;
 }
