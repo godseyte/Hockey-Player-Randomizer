@@ -89,8 +89,8 @@ function ReturnJersey()
     position = positions[Math.floor(Math.random() * positions.length)];
 
     // Captaincy (Weighted)
-    const capList = ["", "Assistant Captain", "Captain"];
-    const capWeights = [90, 7, 3];
+    const capList = ["None", "Assistant Captain", "Captain"];
+    const capWeights = [80, 15, 5];
     let capWeight = 0;
 
     // Generate total weight

@@ -31,3 +31,11 @@ div#LeftBody {
 div#RightBody {
   background: lightcoral;
 }
+
+.PlayerStats {
+  display: block;
+}
+
+.PlayerStats h3 {
+  display: inline-block;
+}
