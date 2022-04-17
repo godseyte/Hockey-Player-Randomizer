@@ -4,6 +4,9 @@ Written by Tucker Godsey
 Generates a Hockey Player using randomized variables.
 */
 
+// Variables for Settings
+let setSex = "male"; // Selects a Sex. "male", "female", "other", or "all".
+
 // Variables for Player
 let firstName = "";
 let lastName = "";
@@ -45,6 +48,9 @@ GeneratePlayer();
 // Generate a Hockey Player
 function GeneratePlayer() 
 {
+    // Run Settings Method
+    SetSettings();
+
     // Run individual methods
     ReturnName();
     ReturnJersey();
@@ -53,6 +59,14 @@ function GeneratePlayer()
 
     // TEMP: Return Player
     ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, city, teamName, position, handed, age);
+}
+
+// Set our Settings
+function SetSettings()
+{
+    // Set settings values from Documents
+    setSex = document.getElementById("setSex").ariaSelected;
+
 }
 
 // Return a Player
@@ -191,6 +205,18 @@ function ReturnPhysicalStats()
         sex = "yes"
     }
 
+    // Ignore all that above, we'll delete it later. Here's a better one.
+    if (setSex === "male")
+    {
+        sex = "Male";
+    } else if (setSex === "female")
+    {
+        sex = "Female";
+    } else
+    {
+        sex = "Other";
+    }
+
     // Age
     age = Math.floor(Math.random() * 23) + 18;
 }
@@ -214,8 +240,23 @@ function ReturnTeam()
 // Return a First and Last name from a list
 function ReturnName()
 {
-    // Get random name from arrays. First and last.
-    firstName = firstNames[Math.round(Math.random() * (firstNames.length - 1))];
+    // Get random name from arrays. First and last. Check first name for Sex
+    if(setSex === "male") 
+    {
+        firstName = firstNames[Math.round(Math.random() * (firstNames.length - 1))];
+    } else if (setSex === "female")
+    {
+        firstName = "Cynthia"; // Temporary name
+    } else if (setSex === "other")
+    {
+        firstName = "Alex"; // Temporary name
+    }
+    else
+    {
+        firstName = "all"; // TEMP
+    }
+    
+
     lastName = lastNames[Math.round(Math.random() * (lastNames.length - 1))];
 }
 
