@@ -38,6 +38,8 @@ const docPosition = document.getElementById("position");
 const docHanded = document.getElementById("handed");
 const docCaptaincy = document.getElementById("captaincy");
 const docAge = document.getElementById("age");
+const docSelectedSex = document.getElementById("selectedSex");
+
 
 // TEMP: Generate list of names
 GenerateNames();
@@ -48,9 +50,6 @@ GeneratePlayer();
 // Generate a Hockey Player
 function GeneratePlayer() 
 {
-    // Run Settings Method
-    SetSettings();
-
     // Run individual methods
     ReturnName();
     ReturnJersey();
@@ -61,12 +60,10 @@ function GeneratePlayer()
     ReturnPlayer(firstName, lastName, jerseyNumber, height, weight, sex, city, teamName, position, handed, age);
 }
 
-// Set our Settings
-function SetSettings()
+function ChangeSex(selected)
 {
-    // Set settings values from Documents
-    setSex = document.getElementById("setSex").ariaSelected;
-
+    setSex = selected;
+    docSelectedSex.innerHTML = setSex.toUpperCase();
 }
 
 // Return a Player

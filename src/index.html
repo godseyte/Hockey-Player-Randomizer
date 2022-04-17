@@ -19,13 +19,13 @@
       
       <div id="SettingsBar">
 
-        <h3>Select Sex</h3>
-        <select id="setSex">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="any">Other</option>
-          <option value="any">Any</option>
-        </select>
+        <h5>Select Sex</h5>
+        <h5 id="selectedSex">None Selected</h5>
+        
+        <button id="setMale" onclick="ChangeSex('male')">Male</button>
+        <button id="setFemale" onclick="ChangeSex('female')">Female</button>
+        <button id="setOther" onclick="ChangeSex('other')">Other</button>
+        <button id="setAll" onclick="ChangeSex('all')">All</button>
 
       </div>
 
