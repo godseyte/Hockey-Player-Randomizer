@@ -51,7 +51,7 @@ GeneratePlayer();
 function GeneratePlayer() 
 {
     // TEMP: Call on nameGenerator
-    GenerateName(setSex);
+    //GenerateName(setSex);
 
     // Run individual methods
     ReturnName();
