@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Tucker's Hockey Player Randomizer</title>
     <link rel="stylesheet" href="index.css" />
+    <script defer src="nameGenerator.js"></script>
     <script defer src="playerGenerator.js"></script>
   </head>
   <body>
@@ -26,6 +27,8 @@
         <button id="setFemale" onclick="ChangeSex('female')">Female</button>
         <button id="setOther" onclick="ChangeSex('other')">Other</button>
         <button id="setAll" onclick="ChangeSex('all')">All</button>
+
+        <input type="file" hidden id="fileMale" src="/Images/male.txt">
 
       </div>
 

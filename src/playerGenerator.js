@@ -50,6 +50,9 @@ GeneratePlayer();
 // Generate a Hockey Player
 function GeneratePlayer() 
 {
+    // TEMP: Call on nameGenerator
+    GenerateName(setSex);
+
     // Run individual methods
     ReturnName();
     ReturnJersey();
