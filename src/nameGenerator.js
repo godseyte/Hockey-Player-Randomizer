@@ -25,7 +25,8 @@ function GenerateNameArrays()
 
     femaleNames = ['Cynthia', 'Scarlet', 'Olivia', 'Emma', 'Ava', 'Charlotte'];
     
-    otherNames = ['Alex', 'Nico', 'Lex']
+    otherNames = ['Alex', 'Nico', 'Lex', 'Baily', 'Dylan', 'Joe', 'Arlo', 'Zane', 'Atlas', 'Whitley', 'Kane', 'Adian', 'Ashton', 'Blaine', 'Blair', 'Cameron', 'Colby',
+    'Dakota', 'Dawson', 'Emery', 'Hunter', 'Julian', 'Peyton', 'Quinn', 'Sidney', 'Dalton']
 
     for(let i = 0; i < maleNames.length; i += i)
     {
