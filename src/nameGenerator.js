@@ -23,10 +23,11 @@ function GenerateNameArrays()
     'Gavin', 'Jake', 'Adam', 'Gabriel', 'Vladislav', 'Dean', 'Andrew', 'J-F', 'Joonas', 'Elivs', 'Daniil', 'Brad', 'Cam', 'Kris', 'Kent', 'Bobert', 'Robert', 'John', 'Gerald',
     'Aidan', 'Aiden'];
 
-    femaleNames = ['Cynthia', 'Scarlet', 'Olivia', 'Emma', 'Ava', 'Charlotte'];
+    femaleNames = ['Cynthia', 'Scarlet', 'Olivia', 'Emma', 'Ava', 'Charlotte', 'Sarah', 'Ana', 'Cindy', 'Carol', 'Hannah', 'Natasha', 'Nyatasha', 'Azuki', 'Yui', 'Asuna',
+    'Kaguya', 'Lexy', 'Jaden', 'Mary'];
     
     otherNames = ['Alex', 'Nico', 'Lex', 'Baily', 'Dylan', 'Joe', 'Arlo', 'Zane', 'Atlas', 'Whitley', 'Kane', 'Adian', 'Ashton', 'Blaine', 'Blair', 'Cameron', 'Colby',
-    'Dakota', 'Dawson', 'Emery', 'Hunter', 'Julian', 'Peyton', 'Quinn', 'Sidney', 'Dalton']
+    'Dakota', 'Dawson', 'Emery', 'Hunter', 'Julian', 'Peyton', 'Quinn', 'Sidney', 'Dalton', 'Mevlin']
 
     for(let i = 0; i < maleNames.length; i += i)
     {
