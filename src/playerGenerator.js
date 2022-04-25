@@ -55,6 +55,7 @@ function GeneratePlayer()
 
     // Run individual methods
     ReturnName();
+    firstName = GenerateName(setSex);
     ReturnJersey();
     ReturnPhysicalStats();
     ReturnTeam();
