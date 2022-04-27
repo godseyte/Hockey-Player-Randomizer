@@ -31,10 +31,10 @@ function GenerateName(sex)
         return selectedName;
     }
     if(sex === allNames){
-        selectedName = "all";
+        selectedName = allNames[Math.round(Math.random() * (allNames.length - 1))];
         return selectedName;
     }
-    console.log(maleNames + femaleNames + otherNames)
+    //console.log(maleNames + femaleNames + otherNames)
     console.log(allNames)
 }
 
@@ -50,16 +50,15 @@ function GenerateNameArrays()
     otherNames = ['Alex', 'Nico', 'Lex', 'Baily', 'Dylan', 'Joe', 'Arlo', 'Zane', 'Atlas', 'Whitley', 'Kane', 'Adian', 'Ashton', 'Blaine', 'Blair', 'Cameron', 'Colby',
     'Dakota', 'Dawson', 'Emery', 'Hunter', 'Julian', 'Peyton', 'Quinn', 'Sidney', 'Dalton', 'Mevlin']
 
-    // for(let i = 0; i < maleNames.length; i += i)
-    // {
-    //     allNames[i] = maleNames[i];
-    // }
-    // for(let i = 0; i < femaleNames.length; i += i)
-    // {
-    //     allNames[allNames.length + 1] = femaleNames[i];
-    // }
-    // for(let i = 0; i < otherNames.length; i += i)
-    // {
-    //     allNames[allNames.length + 1] = otherNames[i];
-    // }
+    /* for (let i = 0; i < maleNames.length; i += i) {
+        allNames[i] = maleNames[i];
+    }
+    for (i = 0; i < femaleNames.length; i += i) {
+        allNames[allNames.length + 1] = femaleNames[i];
+    }
+    for (i = 0; i < otherNames.length; i += i) {
+        allNames[allNames.length + 1] = otherNames[i];
+    } */
+    
+    allNames = [].concat(maleNames, femaleNames, otherNames);
 }
