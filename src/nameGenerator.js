@@ -30,8 +30,8 @@ function GenerateName(sex)
         selectedName = otherNames[Math.round(Math.random() * (otherNames.length - 1))];
         return selectedName;
     }
-    if(sex === allNames){
-        selectedName = allNames[Math.round(Math.random() * (allNames.length - 1))];
+    if(sex === "all"){
+        selectedName = allNames[Math.round(Math.random() * (maleNames.length + femaleNames.length + otherNames.length - 1))];
         return selectedName;
     }
     //console.log(maleNames + femaleNames + otherNames)
@@ -60,5 +60,5 @@ function GenerateNameArrays()
         allNames[allNames.length + 1] = otherNames[i];
     } */
     
-    allNames = [].concat(maleNames, femaleNames, otherNames);
+    allNames.push(...maleNames, ...femaleNames, ...otherNames);
 }

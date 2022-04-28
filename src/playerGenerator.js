@@ -55,7 +55,6 @@ function GeneratePlayer()
 
     // Run individual methods
     ReturnName();
-    firstName = GenerateName(setSex);
     ReturnJersey();
     ReturnPhysicalStats();
     ReturnTeam();
@@ -241,33 +240,15 @@ function ReturnTeam()
 // Return a First and Last name from a list
 function ReturnName()
 {
-    // Get random name from arrays. First and last. Check first name for Sex
-    if(setSex === "male") 
-    {
-        firstName = firstNames[Math.round(Math.random() * (firstNames.length - 1))];
-    } else if (setSex === "female")
-    {
-        firstName = "Cynthia"; // Temporary name
-    } else if (setSex === "other")
-    {
-        firstName = "Alex"; // Temporary name
-    }
-    else
-    {
-        firstName = "all"; // TEMP
-    }
-    
+    // Get Names from nameGenerator.js
+    firstName = GenerateName(setSex);
 
     lastName = lastNames[Math.round(Math.random() * (lastNames.length - 1))];
 }
 
 function GenerateNames() 
 {
-    // TODO: Create large arrays of First and Last names.
-    firstNames = ['Partrik', 'Jakub', 'Boone', 'Oliver', 'Zack', 'Emil', 'Yegor', 'Justin', 'Brendan', 'Sean', 'Carson', 'Gustav', 'Eric', 'Jack', 'Cole', 'Alexandre', 
-    'Gavin', 'Jake', 'Adam', 'Gabriel', 'Vladislav', 'Dean', 'Andrew', 'J-F', 'Joonas', 'Elivs', 'Daniil', 'Brad', 'Cam', 'Kris', 'Kent', 'Bobert', 'Robert', 'John', 'Gerald',
-    'Aidan', 'Aiden'];
-    
+    // TODO: Move this to nameGenerator.js  
     lastNames = ['Laine', 'Voracek', 'Jenner', 'Bjorkstrand', 'Werenski', 'Bemstrom', 'Chinakov', 'Danforth', 'Gaunce', 'Kuraly', 'Meyer', 'Nyquist', 'Robinson', 'Roslovic',
     'Sillinger', 'Texier', 'Bayreuther', 'Bean', 'Boqvist', 'Carlsson', 'Christainsen', 'Gavrikov', 'Kukan', 'Peeke', 'Berube', 'Korpisalo', 'Merzlinkins', 'Tarasov', 'Marchand',
     'Atkinson', 'Johnson', 'Smitherson', 'Skywalker', 'LaRosa', 'Johnson'];
