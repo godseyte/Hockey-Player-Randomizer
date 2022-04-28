@@ -251,5 +251,6 @@ function GenerateNames()
     // TODO: Move this to nameGenerator.js  
     lastNames = ['Laine', 'Voracek', 'Jenner', 'Bjorkstrand', 'Werenski', 'Bemstrom', 'Chinakov', 'Danforth', 'Gaunce', 'Kuraly', 'Meyer', 'Nyquist', 'Robinson', 'Roslovic',
     'Sillinger', 'Texier', 'Bayreuther', 'Bean', 'Boqvist', 'Carlsson', 'Christainsen', 'Gavrikov', 'Kukan', 'Peeke', 'Berube', 'Korpisalo', 'Merzlinkins', 'Tarasov', 'Marchand',
-    'Atkinson', 'Johnson', 'Smitherson', 'Skywalker', 'LaRosa', 'Johnson'];
+    'Atkinson', 'Johnson', 'Smitherson', 'Skywalker', 'LaRosa', 'Johnson', 'Smith', 'Marchand', 'Marner', 'Gretzky', 'Matthews', 'Barnhouse', 'Campbell', 'Peters', 
+    'Zigler', 'Cena', 'Perry'];
 }
