@@ -1,7 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
-  margin: 5%;
+  margin-left: 5%;
   padding: 2rem;
 }
 
@@ -30,6 +30,10 @@ div#LeftBody {
 
 div#RightBody {
   background: lightcoral;
+}
+
+div#SettingsBar {
+  display: inline-block;
 }
 
 .PlayerStats {

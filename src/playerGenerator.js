@@ -231,7 +231,7 @@ function ReturnTeam()
 
     const cities = ['Columbus', 'Cincinnati', 'Toronto', 'Boston', 'Tampa Bay', 'Miami', 'Seattle', 'Las Vegas', 'Los Angeles', 'Detroit', 'Kalamazoo', 'Cleveland', 'San Francisco', 'Calgary', 'Ontario', 'Quebec', 'Dallas', 'Houston', 'London', 'Mexico City', 'Dayton', 'Daytona', 
     'Williamsburg', 'Milford', 'Cedar Point', 'Tokyo', 'Paris', 'Shanghai', 'Kyiv', 'New York', 'Chicago', 'Washington', 'Philadelphia', 'Pheonix', 'Arizona', 'Florida', 'Denver', 'Colorado', 'St. Paul', 'Minnesota', 'Pittsburgh', 'San Jose', 'Nashville', 'Buffalo', 
-    'Montreal', 'Raleigh', 'Carolina', 'Vancouver', 'Ottawa', 'Edmonton', 'Winnipeg', 'Reno'];
+    'Montreal', 'Raleigh', 'Carolina', 'Vancouver', 'Ottawa', 'Edmonton', 'Winnipeg', 'Reno', 'Midtown'];
 
     teamName = teamNames[Math.floor(Math.random() * teamNames.length)];
     city = cities[Math.floor(Math.random() * cities.length)];
