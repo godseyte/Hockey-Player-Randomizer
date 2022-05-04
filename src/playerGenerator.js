@@ -252,5 +252,5 @@ function GenerateNames()
     lastNames = ['Laine', 'Voracek', 'Jenner', 'Bjorkstrand', 'Werenski', 'Bemstrom', 'Chinakov', 'Danforth', 'Gaunce', 'Kuraly', 'Meyer', 'Nyquist', 'Robinson', 'Roslovic',
     'Sillinger', 'Texier', 'Bayreuther', 'Bean', 'Boqvist', 'Carlsson', 'Christainsen', 'Gavrikov', 'Kukan', 'Peeke', 'Berube', 'Korpisalo', 'Merzlinkins', 'Tarasov', 'Marchand',
     'Atkinson', 'Johnson', 'Smitherson', 'Skywalker', 'LaRosa', 'Johnson', 'Smith', 'Marchand', 'Marner', 'Gretzky', 'Matthews', 'Barnhouse', 'Campbell', 'Peters', 
-    'Zigler', 'Cena', 'Perry', 'Maroon', 'Point', 'Stamkos', 'Anderson', 'Fleury'];
+    'Zigler', 'Cena', 'Perry', 'Maroon', 'Point', 'Stamkos', 'Anderson', 'Fleury', 'Panarin', 'Breadman'];
 }
