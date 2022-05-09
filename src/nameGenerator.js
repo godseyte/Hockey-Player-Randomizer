@@ -42,7 +42,7 @@ function GenerateNameArrays()
 {
     maleNames = ['Partrik', 'Jakub', 'Boone', 'Oliver', 'Zack', 'Emil', 'Yegor', 'Justin', 'Brendan', 'Sean', 'Carson', 'Gustav', 'Eric', 'Jack', 'Cole', 'Alexandre', 
     'Gavin', 'Jake', 'Adam', 'Gabriel', 'Vladislav', 'Dean', 'Andrew', 'J-F', 'Joonas', 'Elivs', 'Daniil', 'Brad', 'Cam', 'Kris', 'Kent', 'Bobert', 'Robert', 'John', 'Gerald',
-    'Aidan', 'Aiden', 'Pierre', 'Alexander', 'Jason', 'Jeremy', 'Jeremiah', 'Bryce', 'Tucker', 'Gary', 'Will', 'William'];
+    'Aidan', 'Aiden', 'Pierre', 'Alexander', 'Jason', 'Jeremy', 'Jeremiah', 'Bryce', 'Tucker', 'Gary', 'Will', 'William', 'Peter', 'Tony', 'Steve', 'Stephen'];
 
     femaleNames = ['Cynthia', 'Scarlet', 'Olivia', 'Emma', 'Ava', 'Charlotte', 'Sarah', 'Ana', 'Cindy', 'Carol', 'Hannah', 'Natasha', 'Nyatasha', 'Azuki', 'Yui', 'Asuna',
     'Kaguya', 'Lexy', 'Jaden', 'Mary', 'Sylvia', 'Samantha', 'Haley', 'Harley', 'Ivy', 'Mel', 'Angela', 'Yuna', 'Miko', 'Aloy'];
